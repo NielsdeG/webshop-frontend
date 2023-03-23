@@ -1,0 +1,60 @@
+header{
+  display: flex;
+  flex-direction: row;
+  background-color: blue;
+  width: 100%;
+
+
+}
+
+.search{
+
+    &__container{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-left: 1rem;
+    }
+
+    &__bar{
+      height: 2.2rem;
+      width:40rem;
+    }
+}
+
+.mand{
+
+  &__container{
+    margin: auto 3rem auto auto;
+    color: blue;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+  }
+
+  &__image{
+    margin:0;
+    height: 5rem;
+  }
+}
+
+
+.logo {
+  height: 5rem;
+
+  &__container {
+    display: flex;
+    text-decoration: none!important;
+
+  }
+
+ &__title{
+   font-size: 2.3rem;
+    margin-left: 1rem;
+   color: orange;
+
+  }
+
+}
+

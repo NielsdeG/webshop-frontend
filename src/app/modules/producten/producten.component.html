@@ -1,0 +1,14 @@
+<div class="product__container">
+  <div class="product__row">
+
+    <div class="product__card" *ngFor="let item of productList">
+      <div class="product__card__imageContainer">
+      <img class="product__card__image" src="assets/images/covers/{{item.image}}" alt="{{item.image}}">
+      </div>
+      <h5 class="product__card__title">{{item.title}}</h5>
+      <p class="product__card__description">{{item.description}}</p>
+      <p class="product__card__price"><strong>Prijs: </strong>{{item.price}}</p>
+      <button class="product__card__button" (click)=addToMand(item)>voeg toe aan winkelwagen</button>
+    </div>
+  </div>
+</div>
