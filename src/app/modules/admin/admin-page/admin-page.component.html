@@ -1,1 +1,20 @@
-<p>admin-page works!</p>
+<div class="admin__container">
+  <button type="button" routerLink="/" >Voeg Product toe</button>
+  <div class="admin__row">
+
+
+    <form #changeForm class="admin__card" *ngFor="let item of productList">
+      <div class="admin__card__imageContainer">
+        <img class="admin__card__image" src="assets/images/covers/{{item.image}}" alt="{{item.image}}">
+      </div>
+      <div>
+        <input type="text" name="titles" class="admin__card__title" value="{{item.title }}">
+        <textarea name="description" id="description" class=" admin__card__description" value="{{item.description }}"></textarea>
+      </div>
+      <input type="text" name="price" class="admin__card__price" value="{{item.price }}">
+      <button type="button" class="admin__card__button" (click)="saveChanges(changeForm, item)">save</button>
+      <button type="button" class="admin__card__button" (click)="delete(item)">save</button>
+
+    </form>
+  </div>
+</div>

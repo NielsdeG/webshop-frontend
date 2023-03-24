@@ -2,7 +2,7 @@
   <div class="product__row">
 
     <div class="product__card" *ngFor="let item of productList">
-      <div class="product__card__imageContainer">
+      <div class="product__card__imageContainer"  [routerLink]="['/product']" [queryParams]="{ id: item.id}">
       <img class="product__card__image" src="assets/images/covers/{{item.image}}" alt="{{item.image}}">
       </div>
       <h5 class="product__card__title">{{item.title}}</h5>

@@ -15,7 +15,14 @@ export class MandComponent implements OnInit{
   ngOnInit(): void {
     this.mandservice.getProductList().subscribe(res=>{
       this.product = res;
+      console.log(this.product)
+      this.grandTotal = this.mandservice.calculatePrice();
+
+
+
       this.grandTotal = this.mandservice.calculatePrice();
     })
   }
+
+
 }

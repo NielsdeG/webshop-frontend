@@ -6,4 +6,5 @@ export class ProductModel {
     public category: String,
     public description: String,
     public image: String) {}
+
 }

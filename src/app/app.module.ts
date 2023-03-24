@@ -10,6 +10,8 @@ import { HttpClientModule } from "@angular/common/http";
 import { AdminPageComponent } from './modules/admin/admin-page/admin-page.component';
 import { LoginComponent } from './modules/header/login/login.component';
 import {ReactiveFormsModule} from "@angular/forms";
+import { IndividueelComponent } from './modules/producten/individueel/individueel.component';
+import { AddComponent } from './modules/admin/admin-page/add/add.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import {ReactiveFormsModule} from "@angular/forms";
     ProductenComponent,
     AdminPageComponent,
     LoginComponent,
+    IndividueelComponent,
+    AddComponent,
   ],
   imports: [
     BrowserModule,

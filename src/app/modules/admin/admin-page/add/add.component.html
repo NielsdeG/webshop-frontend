@@ -1,0 +1,16 @@
+<div class="admin__container">
+  <div class="admin__row">
+
+    <form #changeForm class="admin__card" >
+      <div class="admin__card__imageContainer">
+        <input type="text" name="titles" class="admin__card__title">
+        <input type="text" name="category" class="admin__card__title">
+        <input type="text" name="image" class="admin__card__title">
+        <input type="text" name="price" class="admin__card__title">
+        <textarea name="description" id="description" class=" admin__card__description"></textarea>
+      </div>
+      <button type="button" class="admin__card__button" (click)="createProduct(changeForm)">save</button>
+    </form>
+  </div>
+</div>
+
