@@ -24,5 +24,13 @@ export class MandComponent implements OnInit{
     })
   }
 
+  emptyMand(){
+    this.mandservice.emptyMand();
+    this.grandTotal = 0;
+  }
 
+
+  removeItem(item: any) {
+    this.mandservice.removeItem(item)
+  }
 }

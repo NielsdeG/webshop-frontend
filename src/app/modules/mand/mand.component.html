@@ -13,7 +13,10 @@
       <td>{{item.price}}</td>
       <td>{{item.description}}</td>
       <td>{{item.quantity}}</td>
-
+      <button (click)="removeItem(item)">remove</button>
     </tr>
   </table>
+
+  <label>{{grandTotal}}</label>
+  <button (click)="emptyMand()">mand leeg maken </button>
 </div>

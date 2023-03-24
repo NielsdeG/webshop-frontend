@@ -53,7 +53,8 @@ export class AdminPageComponent {
   }
 
   delete(item:any){
-    this.productService.deleteProduct(item.id)
+    console.log(item.id)
+    this.productService.deleteProduct(item.id).subscribe()
   }
 
 }

@@ -67,6 +67,7 @@ export class MandService {
 
   emptyMand(){
     this.mandItems= []
+    this.productList.next(this.mandItems)
   }
 
   // setProductList(product: any){

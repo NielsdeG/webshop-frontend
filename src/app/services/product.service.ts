@@ -54,13 +54,17 @@ export class ProductService {
   }
 
   deleteProduct(id:string){
-    return this.http.get(this.baseUrl + '/delete?id='+id)
+    let options = {
+      headers: new HttpHeaders()
+        .set('Content-Type', 'application/json')
+        .set('Authorization', 'Bearer ' + this.getToken()),
+    }
+    return this.http.delete(this.baseUrl + '/delete?id='+id)
   }
 
   createProduct(title:string, category:string, image:string, description:string, price:string){
     let options = {
       headers: new HttpHeaders()
-        .set('Content-Type', 'application/json')
         .set('Authorization', 'Bearer ' + this.getToken()),
     }
     const body = {
@@ -70,7 +74,8 @@ export class ProductService {
       description: description,
       image: image
     };
-    return this.http.post(this.baseUrl + '/create', body, options)
+    console.log(body)
+    return this.http.post(this.baseUrl + '/create', body, )
   }
 
 }

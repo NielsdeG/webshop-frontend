@@ -1,11 +1,23 @@
 .admin {
 
+  &__add{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    height: 3rem;
+    width: 10rem;
+    background-color: coral;
+    border-radius: 10px;
+  }
+
   &__row {
     display: flex;
     flex-direction: column;
   }
 
   &__card{
+    margin-left: auto;
+    margin-right: auto;
     width: 90%;
     height: 10rem;
     padding: 10px;
@@ -13,12 +25,18 @@
     border-width: 1px;
     background-color: #ebebeb;
     display: flex;
+    margin-top: 1rem;
 
     &__imageContainer{
       width: 20%;
-      height: 100%;
-      margin: auto;
 
+    }
+
+
+    &__price{
+      margin-top: auto;
+      margin-bottom: auto;
+      width:2.4rem;
     }
 
     &__image{
@@ -28,27 +46,47 @@
     }
 
     &__title{
+      margin-top: auto;
+      margin-bottom: auto;
       font-size: 18px;
-      margin: 1rem 0 0 0;
+      height: 20%;
+      margin-left: 1rem;
     }
 
     &__description{
-      margin: 0;
+      margin-left: 1rem;
+      margin-right: 1.5rem;
       overflow: hidden;
-      height: 3.2rem;
+      height: 85%;
+      width: 25%;
       text-overflow:ellipsis;
       display: -webkit-box;
       -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
+      resize: none;
     }
 
     &__button{
       background-color: coral;
       border-radius: 5px;
-      width: 100%;
-      height: 2.5rem;
-      padding: 0;
+      height: 3rem;
+      width: 3rem;
+      margin-left: auto;
       border-width: 1px;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    &__delete{
+      background-color: red;
+      border-radius: 5px;
+      height: 3rem;
+      padding: 0;
+      width: 3rem;
+      border-width: 1px;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: 1rem;
     }
   }
 
