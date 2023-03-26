@@ -3,8 +3,11 @@ header{
   flex-direction: row;
   background-color: blue;
   width: 100%;
+}
 
-
+.header__link{
+  font-size: 20px;
+  color: #ebebeb;
 }
 
 .search{

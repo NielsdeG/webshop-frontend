@@ -1,15 +1,16 @@
-<div>
-  <form [formGroup]="login" (ngSubmit)="submitForm()">
-    <label>
-      First Name:
-      <input type="text" formControlName="name">
-    </label>
-
-    <label>
-      First Name:
-      <input type="text" formControlName="password">
-    </label>
-    <button type="submit">Submit Application</button>
-  </form>
-
+<div class="login">
+  <div class="login__container">
+    <form [formGroup]="login" (ngSubmit)="submitForm()" class="login__form">
+      <h1 class="login__form__header">Login</h1>
+      <div class="login__form__group">
+        <label>Name</label>
+        <input type="text" formControlName="name" class="login__form__control">
+      </div>
+      <div class="login__form__group">
+        <label>password</label>
+        <input type="text" formControlName="password" class="login__form__control">
+      </div>
+      <button type="submit" class="login__form__button">login</button>
+    </form>
+  </div>
 </div>

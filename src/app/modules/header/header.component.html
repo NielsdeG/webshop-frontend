@@ -4,10 +4,10 @@
     <h1 class="logo__title">N-games</h1>
   </a>
   <div class="search__container">
-    <label routerLink="/login"> login</label>
+    <label routerLink="/login" class="header__link"> Login</label>
   </div>
   <div class="search__container">
-    <label *ngIf="authService.isLoggedIn | async" routerLink="/admin"> adminPanel</label>
+    <label *ngIf="authService.isLoggedIn | async" routerLink="/admin" class="header__link"> adminPanel</label>
   </div>
   <button class="mand__container" routerLink="/mandje">
     <img src="assets/images/mandje.png" alt="n-games logo" class="mand__image"/>
